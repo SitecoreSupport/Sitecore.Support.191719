@@ -67,6 +67,9 @@
     <Reference Include="System.Runtime">
       <HintPath>..\lib\System.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\lib\System.Threading.Tasks.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
