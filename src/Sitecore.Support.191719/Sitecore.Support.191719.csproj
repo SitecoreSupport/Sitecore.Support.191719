@@ -43,15 +43,19 @@
   <ItemGroup>
     <Reference Include="Salesforce.Common">
       <HintPath>..\lib\Salesforce.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Salesforce.Force">
       <HintPath>..\lib\Salesforce.Force.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.DataExchange">
       <HintPath>..\lib\Sitecore.DataExchange.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.DataExchange.Providers.Salesforce">
       <HintPath>..\lib\Sitecore.DataExchange.Providers.Salesforce.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.0\lib\Sitecore.Kernel.dll</HintPath>
@@ -66,9 +70,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime">
       <HintPath>..\lib\System.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Threading.Tasks">
       <HintPath>..\lib\System.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
