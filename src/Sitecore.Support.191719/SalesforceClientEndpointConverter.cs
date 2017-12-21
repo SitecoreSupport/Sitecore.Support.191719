@@ -10,7 +10,7 @@ using Sitecore.Services.Core.Model;
 
 namespace Sitecore.Support.DataExchange.Providers.Salesforce.Endpoints
 {
-  public class SalesforceClientEndpointConverter : BaseConnectionStringEndpointConverter
+  public class SalesforceClientEndpointConverter: BaseConnectionStringEndpointConverter
   {
     public SalesforceClientEndpointConverter(IItemModelRepository repository) : base(repository)
     {
@@ -33,7 +33,15 @@ namespace Sitecore.Support.DataExchange.Providers.Salesforce.Endpoints
         var clientId = (string)builder["client id"];
         var secretKey = (string)builder["secret key"];
         var securityToken = (string)builder["security token"];
-        var credentials = new AuthenticationClientSettings(clientId, secretKey, username, password, securityToken);
+        var isSandbox = false;
+        if (builder.ContainsKey("sandbox"))
+        {
+          bool.TryParse((string)builder["sandbox"], out isSandbox);
+        }
+        var credentials = new AuthenticationClientSettings(clientId, secretKey, username, password, securityToken)
+        {
+          IsSandbox = isSandbox
+        };
         endpoint.AddPlugin(credentials);
       }
     }
