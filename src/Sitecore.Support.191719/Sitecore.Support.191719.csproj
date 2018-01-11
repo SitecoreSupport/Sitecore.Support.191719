@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="AuthenticationClientSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadObjectsStepProcessor.cs" />
     <Compile Include="SalesforceClientEndpointConverter.cs" />
     <Compile Include="SalesforceClientEndpointTroubleshooter.cs" />
   </ItemGroup>
